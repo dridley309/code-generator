@@ -1,0 +1,26 @@
+{
+    "name": "dridley309/code-generator",
+    "description": "Generate secure codes using customisable rule criteria",
+    "autoload": {
+        "psr-4": {
+            "Dridley309\\CodeGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "Dridley309\\CodeGenerator\\Tests\\": "tests/"
+        }
+      },
+    "authors": [
+        {
+            "name": "Dominic Ridley",
+            "email": "domm.rid@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.31"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
