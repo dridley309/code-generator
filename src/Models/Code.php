@@ -10,4 +10,9 @@ use Illuminate\Database\Eloquent\Model;
 final class Code extends Model
 {
     use HasFactory;
+
+    protected static function newFactory()
+    {
+        return \Dridley309\CodeGenerator\Database\Factories\CodeFactory::new();
+    }
 }

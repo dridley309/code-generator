@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit;
+namespace Dridley309\CodeGenerator\Tests\Unit;
 
 use Dridley309\CodeGenerator\Generator;
 use PHPUnit\Framework\TestCase;
