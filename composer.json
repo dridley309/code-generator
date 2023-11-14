@@ -1,6 +1,8 @@
 {
     "name": "dridley309/code-generator",
     "description": "Generate secure codes using customisable rule criteria",
+    "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Dridley309\\CodeGenerator\\": "src/"
@@ -19,8 +21,19 @@
     ],
     "require": {
         "php": "^8.2",
-        "illuminate/support": "^10.31"
+        "laravel/framework": "^10.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dridley309\\CodeGenerator\\CodeGeneratorServiceProvider"
+            ]
+        }
+    }
+  
 }
