@@ -6,7 +6,6 @@ namespace Dridley309\CodeGenerator;
 
 use Dridley309\CodeGenerator\Rules\RuleInterface;
 use Dridley309\CodeGenerator\Strategies\StrategyInterface;
-use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 

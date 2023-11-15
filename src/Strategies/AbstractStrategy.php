@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Config;
 abstract class AbstractStrategy implements StrategyInterface
 { 
     /**
-     * @var RuleInterface
+     * @var RuleInterface[]
      */
     private array $rules = [];
 
@@ -22,6 +22,9 @@ abstract class AbstractStrategy implements StrategyInterface
         $this->rules = $rules;
     }
 
+    /**
+     * @throws \RuntimeException
+     */
     public function process(): string
     {
 
@@ -44,6 +47,9 @@ abstract class AbstractStrategy implements StrategyInterface
         return $value;
     }
 
+    /**
+     * @throws RuleFailedException
+     */
     protected function validateRules(string $value): void
     {
         foreach($this->rules as $rule) {
