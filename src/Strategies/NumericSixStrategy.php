@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Dridley309\CodeGenerator\Strategies;
 
-use Illuminate\Support\Collection;
-
 class NumericSixStrategy extends AbstractStrategy
 { 
     protected function generateInitialValue(): string

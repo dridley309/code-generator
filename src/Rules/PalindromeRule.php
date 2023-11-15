@@ -6,7 +6,7 @@ namespace Dridley309\CodeGenerator\Rules;
 
 use Dridley309\CodeGenerator\Exceptions\RuleFailedException;
 
-final class PalindromeRule extends RuleInterface
+final class PalindromeRule implements RuleInterface
 { 
     public static function apply(string $value): void
     {

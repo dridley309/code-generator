@@ -6,5 +6,5 @@ namespace Dridley309\CodeGenerator\Rules;
 
 interface RuleInterface
 { 
-    public static function apply(): void;
+    public static function apply(string $value): void;
 }
